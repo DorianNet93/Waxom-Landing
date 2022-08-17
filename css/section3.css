@@ -1,0 +1,123 @@
+.wrapper3 {
+  padding: 0 10% 0 10%;
+  width: 80%;
+  height: 85%;
+}
+
+.section3 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.section3-text {
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  gap: 10%;
+}
+
+.titleSection3 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  color: rgb(85, 85, 85);
+}
+
+.section3-text {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+}
+
+.samplesSection3 {
+  height: 80%;
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.sampleSite1 {
+  height: 100%;
+  z-index: 2;
+}
+
+.sampleSite2 {
+  position: absolute;
+  height: 50%;
+  z-index: 1;
+  right: 0;
+  bottom: 0;
+  transition: all 1s ease;
+}
+
+.sampleSite3 {
+  position: absolute;
+  height: 50%;
+  z-index: 1;
+  left: 0;
+  bottom: 0;
+  transition: all 1s ease;
+}
+
+.sampleSite3:hover, .sampleSite2:hover {
+  z-index: 3;
+  height: 100%;
+}
+
+
+.bottomSection3 {
+  height: 15%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  background-image: linear-gradient( 0deg, rgb(33,27,25) 0%, rgb(78,52,39) 100%);
+}
+
+.bottomSection3-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bottomSection3-title {
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  display: block;
+}
+
+.bottomSection3-titleLogo {
+  color: rgb(157, 139, 120);
+}
+
+.bottomSection3-text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  color: rgb(140, 140, 140);
+}
+
+.bottomSection3-link{
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 12%;
+  border-radius: 5%;
+  box-shadow: 0px 3px 2px rgb(115, 99, 87);
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: rgb(153, 134, 117);
+}
+

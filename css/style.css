@@ -1,0 +1,406 @@
+* {
+  margin: 0;
+}
+
+html, body, .contentSite {
+  width: 100%;
+  height: 100%;
+  scroll-behavior: smooth;
+  
+}
+
+/* .contentSite{
+  animation: block 14s linear;
+}
+
+@keyframes block {
+  0% {
+    overflow: hidden;
+  }
+
+  70% {
+    background-color: black;
+  }
+
+  99% {
+    overflow: hidden;
+  }
+
+  100% {
+    overflow: visible;
+  }
+} */
+
+.promo {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  opacity: 0;
+  animation: promo 10s linear forwards;
+  z-index: 500;
+}
+
+.promoVideo {
+  width: 100%;
+}
+
+@keyframes promo {
+  0% {
+    opacity: 1;
+  }
+
+  99% {
+    opacity: 1;
+    z-index: 500;
+  }
+
+  100% {
+    opacity: 0;
+    z-index: -500;
+  }
+}
+
+.wrapper {
+  width: 80%;
+  height: 95vh;
+  padding: 2.5vh 10% 2.5vh 10%;
+  position: relative;
+}
+
+.backgroundSection1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -5;
+  background-color: rgb(41, 34, 34);
+}
+
+.background {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.background1 {
+  animation: backgroundSlide 20s linear infinite;
+}
+
+.background2 {
+  opacity: 0;
+  animation: backgroundSlide 20s linear infinite;
+  animation-delay: 4s;
+}
+
+.background3 {
+  opacity: 0;
+  animation: backgroundSlide 20s linear infinite;
+  animation-delay: 8s;
+}
+
+.background4 {
+  opacity: 0;
+  animation: backgroundSlide 20s linear infinite;
+  animation-delay: 12s;
+}
+
+.background5 {
+  opacity: 0;
+  animation: backgroundSlide 20s linear infinite;
+  animation-delay: 16s;
+}
+
+@keyframes backgroundSlide {
+  0% {
+    opacity: 1;
+  }
+
+  19% {
+    opacity: 1;
+  }
+
+  20% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.section1 {
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header {
+  align-self: normal;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 32px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+}
+
+.logoImg {
+  width: 100%;
+  height: 100%;
+}
+
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 14px;
+  width: 70%;
+  gap: 2%;
+  flex-wrap: wrap;
+}
+
+.link{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  text-decoration: none;
+  color: white;
+  transition: all 0.2s ease;
+}
+
+.link:hover {
+  color: rgb(191, 171, 147);
+}
+
+.bar {
+  display: flex;
+  justify-content: space-between;
+  width: 6%;
+}
+
+.cart {
+  margin-right: 2%;
+}
+
+.bagIcon {
+  transition: all 0.2s ease;
+}
+
+.bagIcon:hover {
+  fill: rgb(191, 171, 147) ;
+}
+
+.buttonSearch {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+.searchIcon {
+  transition: all 0.2s ease;
+}
+
+.buttonSearch:hover svg {
+  fill: rgb(191, 171, 147);
+}
+
+.section1Content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.section1Content-textTop {
+  font-size: 24px;
+  font-weight: 500;
+  cursor: default;
+}
+
+.section1Content-textMiddle {
+  font-size: 46px;
+  font-weight: 800;
+  cursor: default;
+}
+
+.section1Content-textBottom {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  cursor: default;
+  margin-bottom: 5%;
+}
+
+.section1Button {
+  width: 25%;
+  border-radius: 5%;
+  border: none;
+  box-shadow: 0px 3px 2px rgb(115, 99, 87);
+  color: white;
+  font-size: 16px;
+  font-weight: 800;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: rgb(191, 171, 147);
+}
+
+.buttonArrow {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, 0);
+}
+
+.arrowIcon {
+  transition: all 0.2s ease;
+}
+
+.buttonArrow:hover svg {
+  fill: rgb(211, 193, 173);
+}
+
+.buttonArrowLeft {
+  left: 5%;
+}
+
+.buttonArrowRight {
+  right: 5%;
+  transform: translate(50%, 0%);
+}
+
+
+.slideControl {
+  width: 12%;
+  position: relative;
+  bottom: 2%;
+}
+
+.slide {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: gray;
+  cursor: pointer;
+}
+
+.slide1 {
+  animation: slideOff 20s linear infinite;
+}
+
+.slide2 {
+  animation: slideOff 20s linear infinite;
+  animation-delay: 4s;
+}
+
+.slide3 {
+  animation: slideOff 20s linear infinite;
+  animation-delay: 8s;
+}
+
+.slide4 {
+  animation: slideOff 20s linear infinite;
+  animation-delay: 12s;
+}
+
+.slide5 {
+  animation: slideOff 20s linear infinite;
+  animation-delay: 16s;
+}
+
+@keyframes slideOff {
+  0% {
+    opacity: 0;
+  }
+
+  19% {
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.slidesOff, .slidesActive {
+  display: flex;
+  position: absolute;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.slideActive{
+  width: 12px;
+  height: 12px;
+  background: transparent;
+  border-radius: 50%;
+  border: 2px solid rgb(191, 171, 147);
+  opacity: 0;
+  cursor: pointer;
+}
+
+.slideActive1 {
+  animation: slideActive1 20s linear infinite;
+}
+
+.slideActive2 {
+  animation: slideActive1 20s linear infinite;
+  animation-delay: 4s;
+}
+
+.slideActive3 {
+  animation: slideActive1 20s linear infinite;
+  animation-delay: 8s;
+}
+
+.slideActive4 {
+  animation: slideActive1 20s linear infinite;
+  animation-delay: 12s;
+}
+
+.slideActive5 {
+  animation: slideActive1 20s linear infinite;
+  animation-delay: 16s;
+}
+
+@keyframes slideActive1 {
+  0% {
+    opacity: 1;
+  }
+
+  19% {
+    opacity: 1;
+  }
+
+  20% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+

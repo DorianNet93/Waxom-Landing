@@ -1,0 +1,58 @@
+.section2 {
+  width: 80%;
+  height: 50%;
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.wrapper2 {
+  padding: 3% 10% 7% 10%;
+}
+
+.desingBlock {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  text-align: center;
+  gap: 7%;
+}
+
+.bottomLineBlockSec2, .IconSec2, .titleAboutSec2 {
+  transition: all 0.2s ease;
+}
+
+.desingBlock:hover svg {
+  fill: rgb(199, 178, 153);
+}
+
+.desingBlock:hover .bottomLineBlockSec2 {
+  background-color: rgb(199, 178, 153);
+}
+
+.desingBlock:hover .titleAboutSec2 {
+  color: rgb(199, 178, 153);
+}
+
+.titleAboutSec2 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color:  rgb(85, 85, 85);
+}
+
+.textAboutSec2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  font-weight: 300;
+  color: rgb(71, 70, 70);
+}
+
+.bottomLineBlockSec2 {
+  height: 2px;
+  width: 30%;
+  background-color: rgb(85, 85, 85);
+}
