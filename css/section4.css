@@ -1,5 +1,6 @@
 .section4 {
   width: 100%;
+  height: 100%;
   padding-top: 10%;
   padding-bottom: 10%;
 }
@@ -12,11 +13,12 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  gap: 10%;
+  justify-content: space-between;
+
 }
 .section4-titleContent {
   width: 100%;
-  height: 19%;
+  height: 14%;
 }
 
 .section4-title {
@@ -37,18 +39,63 @@
 .section4-buttonsSlide {
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 100%;
-  gap: 10%;
-  height: 10%;
+  gap: 1%;
+  height: 5%;
 }
 
 .section4-buttonSlide {
-  width: 10%;
+  padding: 1%;
   background-color: white;
   border: 1px solid rgb(235, 235, 235);
-  border-radius: 5%;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  
+  border-radius: 5px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  background-color: brown;
 }
 
+.section4-content{
+  width: 100%;
+  height: 60%;
+  display: flex;
+  align-content: space-between;
+  flex-wrap: wrap;
+  column-gap: 5%;
+}
+
+.section4-contentBox {
+  width: 30%;
+  height: 45%;
+  background-color: brown;
+  position: relative;
+}
+
+.section4-contentBox1 {
+  background-image: url(../img/sec4-boxImg1.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center ;
+}
+
+.section4-contentBoxBottom {
+  height: 30%;
+  width: 100%;
+  background-color: white;
+  position: absolute;
+  bottom: 0;
+}
+
+.section4-buttonLoad {
+  width: 20%;
+  height: 7%;
+  background-color: rgb(153, 134, 117);
+  box-shadow: 0px 3px 2px rgb(115, 99, 87);
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 5px;
+}

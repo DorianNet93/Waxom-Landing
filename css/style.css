@@ -260,6 +260,7 @@ html, body, .contentSite {
   padding-top: 10px;
   padding-bottom: 10px;
   background-color: rgb(191, 171, 147);
+  cursor: pointer;
 }
 
 .buttonArrow {
