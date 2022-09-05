@@ -184,6 +184,10 @@ html, body, .contentSite {
   height: 100%;
 }
 
+.navMobile {
+  display: none;
+}
+
 .nav {
   display: flex;
   justify-content: flex-end;
@@ -431,3 +435,58 @@ html, body, .contentSite {
 }
 
 
+@media (min-width: 650px) and (max-width: 1000px) {
+  .nav {
+    display: none;
+  }
+
+  .logo {
+    margin-right: 44%;
+  }
+
+  .navMobile {
+    align-self: flex-end;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    font-size: 14px;
+    width: 24px;
+    height: 100%;
+    background-image: url(../img/icon-menu-button.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    order: 1;
+  }
+
+  .navMobileLink {
+    position: absolute;
+    top: 46px;
+    right: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+    display: none;
+  }
+
+  .menuButton {
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .menuButton:checked + nav {
+    display: flex;
+  }
+
+  .bar {
+    width: 10%;
+    gap: 6px;
+  }
+
+  .arrowIcon {
+
+  }
+}
