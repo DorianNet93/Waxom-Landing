@@ -1,5 +1,5 @@
 .section2 {
-  width: 80%;
+  width: 100%;
   height: 50%;
   display: flex;
   justify-content: space-between;
@@ -7,7 +7,7 @@
 }
 
 .wrapper2 {
-  padding: 3% 10% 5% 10%;
+  padding: 5% 10% 5% 10%;
 }
 
 .desingBlock {
@@ -18,7 +18,9 @@
   align-items: center;
   text-decoration: none;
   text-align: center;
-  gap: 7%;
+  height: 100%;
+  justify-content: space-between;
+  
 }
 
 .bottomLineBlockSec2, .IconSec2, .titleAboutSec2 {
@@ -55,4 +57,38 @@
   height: 2px;
   width: 30%;
   background-color: rgb(85, 85, 85);
+}
+
+@media (min-width: 650px) and (max-width: 1000px) {
+  .titleAboutSec2 {
+    font-size: 14px;
+  }
+
+  .textAboutSec2 {
+    font-size: 12px;
+    font-weight: 700;
+  }
+}
+
+
+@media (max-width:649px) {
+  .section2 {
+    flex-wrap: wrap;
+    height: 100%;
+  }
+
+  .titleAboutSec2 {
+    font-size: 14px;
+  }
+
+  .desingBlock {
+    width: 50%;
+    height: 40%;
+    margin-bottom: 10%;
+  }
+
+  .textAboutSec2 {
+    font-size: 12px;
+    font-weight: 700;
+  }
 }
