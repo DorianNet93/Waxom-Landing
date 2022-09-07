@@ -513,6 +513,10 @@ html, body, .contentSite {
     width: 25px;
     height: 55px;
   } 
+
+  .slideControl {
+    width: 20%;
+  }
 }
 
 @media (min-width: 0px) and (max-width: 649px) {

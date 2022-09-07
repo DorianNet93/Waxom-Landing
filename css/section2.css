@@ -60,6 +60,10 @@
 }
 
 @media (min-width: 650px) and (max-width: 1000px) {
+  .wrapper2 {
+    padding: 5% 5% 5% 5%;
+  }
+
   .titleAboutSec2 {
     font-size: 14px;
   }
@@ -72,6 +76,10 @@
 
 
 @media (max-width:649px) {
+  .wrapper2 {
+    padding: 5%;
+  }
+  
   .section2 {
     flex-wrap: wrap;
     height: 100%;
