@@ -440,6 +440,11 @@ html, body, .contentSite {
 
 
 @media (min-width: 650px) and (max-width: 1000px) {
+  .wrapper {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
   .nav {
     display: none;
   }
@@ -520,6 +525,11 @@ html, body, .contentSite {
 }
 
 @media (min-width: 0px) and (max-width: 649px) {
+  .wrapper {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
   .nav {
     display: none;
   }

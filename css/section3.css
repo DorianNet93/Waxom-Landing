@@ -156,27 +156,34 @@
 
   .sampleSite1 {
     position: absolute;
-    top: 25%;
-    height: 60%;
+    bottom: 0%;
+    height: 40vh;
   }
 
   .sampleSite2 {
     position: absolute;
     top: 0%;
+    width: 42vw;
+  }
 
+  .sampleSite3 {
+    position: absolute;
+    top: 0%;
+    width: 42vw;
   }
 
   .sampleSite1:hover {
     z-index: 3;
-    height: 80%;
-    top: 50%;
-    transform: translateY(-50%);
+    height: 60vh;
+    bottom: 0%;
+    /* transform: translateY(-50%); */
     border: 2px solid rgb(78,52,39);
   }
 
   .sampleSite2:hover {
     z-index: 3;
-    height: 60%;
+    height: 35vh;
+    width: auto;
     left: 50%;
     transform: translateX(-50%);
     border: 2px solid rgb(78,52,39);
@@ -184,7 +191,8 @@
 
   .sampleSite3:hover {
     z-index: 3;
-    height: 60%;
+     height: 35vh;
+    width: auto;
     left: 50%;
     transform: translateX(-50%);
     border: 2px solid rgb(78,52,39);
