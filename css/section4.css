@@ -52,7 +52,10 @@
   font-size: 16px;
   font-weight: 300;
   border: 1px solid rgb(199, 178, 153);
+  transition: all 0.2s ease;
 }
+
+
 
 .section4-buttonSlide:hover {
   background-color: rgb(124, 95, 81);
@@ -79,10 +82,52 @@
   transition: all 0.2s ease;
 }
 
-/* .section4-contentBox:hover + .sec4-boxImg {
-  filter: brightness(20%);
-} */
+.sec4-searchIcon {
+  position: absolute;
+  top: 25%;
+  right: 36%;
+  opacity: 0;
+  z-index: 1;
+  transition: all 0.2s ease;
+}
 
+.sec4-linkIcon {
+  position: absolute;
+  top: 25%;
+  left: 36%;
+  opacity: 0;
+  z-index: 1;
+  transition: all 0.2s ease;
+}
+
+.sec4-filterImg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70%;
+  transition: all 0.2s ease;
+}
+
+.section4-contentBox:hover .sec4-searchIcon {
+  opacity: 1;
+}
+
+.section4-contentBox:hover .sec4-linkIcon {
+  opacity: 1;
+}
+
+.sec4-searchIcon:hover, .sec4-linkIcon:hover  {
+  fill: rgb(199, 178, 153);
+}
+
+.section4-contentBox:hover .sec4-filterImg {
+  backdrop-filter: brightness(30%);
+}
+
+.section4-contentBox:hover .section4-contentBoxBottom {
+  background-color: rgb(54, 47, 45);
+}
 
 .section4-contentBox:hover .section4-contentBoxBottomText-Top{
   color: white;
@@ -92,7 +137,7 @@
   color: wheat;
 }
 
-.sec4-box1Img,.sec4-box2Img {
+.sec4-boxImg {
   height: 100%;
 }
 
@@ -107,9 +152,9 @@
   position: absolute;
   bottom: 0;
   left: 0;
-  min-height: 30%;
+  height: 30%;
   width: 100%;
-  background-color: rgb(240, 225, 198);
+  background-color: rgb(251, 250, 248);
   transition: all 0.2s ease;
 }
 

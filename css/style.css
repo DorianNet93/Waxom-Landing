@@ -20,8 +20,8 @@ html, body, .contentSite {
 }
 
 .buttonScrollSite {
-  width: 2%;
-  height: 4%;
+  width: 24px;
+  height: 22px;
   display: flex;
   background-color: transparent;
   border: 2px solid rgb(20, 18, 18);
