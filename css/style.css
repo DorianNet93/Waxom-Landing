@@ -605,10 +605,11 @@ body::-webkit-scrollbar-thumb {
 
   .section1Content-textBottom {
     font-size: 10px;
-    margin-bottom: 7%;
+    margin-bottom: 10%;
   }
 
   .section1Button {
+    width: 30%;
     font-size: 12px;
     padding-top: 7px;
     padding-bottom: 7px;
@@ -713,13 +714,14 @@ body::-webkit-scrollbar-thumb {
 
   .section1Content-textBottom {
     font-size: 8px;
-    margin-bottom: 7%;
+    margin-bottom: 15%;
   }
 
   .section1Button {
-    font-size: 8px;
-    padding-top: 7px;
-    padding-bottom: 7px;
+    width: 40%;
+    font-size: 12px;
+    padding-top: 5px;
+    padding-bottom: 5px;
   }
 
   .buttonArrow {
