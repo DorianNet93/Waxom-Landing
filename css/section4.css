@@ -181,3 +181,158 @@
   cursor: pointer;
   border-radius: 5px;
 }
+
+@media (min-width: 650px) and (max-width: 1000px) {
+  .wrapper4 {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .section4-title {
+    font-size: 16px;
+  }
+
+  .section4-titleText {
+    font-size: 12px;
+  }
+
+  .section4-buttonSlide {
+    font-size: 12px;
+  }
+
+  .section4-buttonLoad {
+    font-size: 12px;
+    height: 5%;
+  }
+
+  .section4-content {
+    height: 70%;
+  }
+
+  .section4-contentBox {
+    width: 32%;
+  }
+
+  .section4-contentBoxBottom {
+    text-align: left;
+    gap: 5%;
+  }
+
+  .section4-contentBoxBottomText-Top {
+    font-size: 12px;
+  }
+
+  .section4-contentBoxBottomText-Bottom {
+    font-size: 8px;
+  }
+}
+
+@media (min-width: 450px) and (max-width: 649px) {
+  .wrapper4 {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .section4-title {
+    font-size: 16px;
+  }
+
+  .section4-titleText {
+    font-size: 12px;
+  }
+
+  .section4-buttonSlide {
+    font-size: 12px;
+  }
+
+  .section4-buttonLoad {
+    font-size: 12px;
+    height: 5%;
+  }
+
+  .section4-content {
+    height: 70%;
+  }
+
+  .section4-contentBox {
+    height: 32%;
+    width: 48%;
+  }
+
+  .section4-contentBoxBottom {
+    text-align: left;
+    gap: 5%;
+  }
+
+  .section4-contentBoxBottomText-Top {
+    font-size: 12px;
+  }
+
+  .section4-contentBoxBottomText-Bottom {
+    font-size: 8px;
+  }
+}
+
+@media (max-width: 449px) {
+  .section4 {
+    height: 200%;
+    
+  }
+
+  .wrapper4 {
+    padding-left: 5%;
+    padding-right: 5%;
+    gap: 2%;
+  }
+
+  .section4-title {
+    font-size: 16px;
+  }
+
+  .section4-titleText {
+    font-size: 12px;
+  }
+
+  .section4-buttonsSlide {
+    flex-wrap: wrap;
+    
+  }
+
+  .section4-buttonSlide {
+    font-size: 12px;
+    
+  }
+
+  .section4-buttonLoad {
+    font-size: 12px;
+    height: 3%;
+  }
+
+  .section4-content {
+    height: 120%;
+    flex-direction: column;
+    justify-items: center;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 1%;
+  }
+
+  .section4-contentBox {
+    /* height: 32%; */
+    width: 70%;
+
+  }
+
+  .section4-contentBoxBottom {
+    text-align: left;
+    gap: 5%;
+  }
+
+  .section4-contentBoxBottomText-Top {
+    font-size: 12px;
+  }
+
+  .section4-contentBoxBottomText-Bottom {
+    font-size: 8px;
+  }
+}
