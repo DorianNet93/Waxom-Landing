@@ -1,0 +1,30 @@
+.section8 {
+  width: 100%;
+  background-image: url(../img/sec8-background2.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.wrapper8 {
+  width: 100%;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  display: flex;
+  justify-content: space-between;
+  backdrop-filter: grayscale(80%);
+}
+
+.sec8-img {
+  width: 22%;
+}
+
+@media (max-width:1000px){
+  .wrapper8 {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
+
