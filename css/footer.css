@@ -2,11 +2,14 @@
   width: 100%;
   height: 100%;
   font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
 }
 
 .wrapperFooter {
   padding-left: 10%;
   padding-right: 10%;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 
 .footerTop {
@@ -18,7 +21,7 @@
 }
 
 .footerTopBlock {
-  width: 24%;
+  width: 23%;
   display: flex;
   flex-direction: column;
 }
@@ -28,12 +31,74 @@
   width: 100%;
   align-items: center;
 }
+
+.footer-marginBottom {
+  margin-bottom: 20px;
+}
+
+.footer-paddingBlock {
+  padding-top: 26px;
+}
+
 .footerTitleWaxom-text {
   font-family: 'Raleway', sans-serif;
   font-size: 32px;
   text-decoration: none;
   color: white;
 }
+
+.footerTopBlock-text {
+  font-size: 12px;
+  color: rgb(85, 85, 85);
+}
+
+.footer-block1-link {
+  font-size: 12px;
+  text-decoration: none;
+  font-size: 400;
+  color: white;
+  position: relative;
+}
+
+.footer-block1-link::after {
+  content: "\25B8";
+  font-size: 18px;
+  position: absolute;
+  top: 55%;
+  transform: translateY(-50%);
+}
+
+.footerBlog-Title {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: white;
+}
+
+.timeBlogPubl {
+  font-size: 8px;
+  color: rgb(54, 54, 54);
+  margin-bottom: 4px;
+}
+
+.footer-TopBlock-post {
+  position: relative;
+}
+
+
+
+
+/* .footer-TopBlock-post-hover:hover + .timeBlogPubl {
+  color: rgb(199, 178, 153);
+} */
+
+.footerLineDecor {
+  width: 100%;
+  height: 2px;
+  background-color: rgb(37, 37, 37);
+}
+
+
 
 
 .footer-bottom {
