@@ -43,10 +43,19 @@ body::-webkit-scrollbar-thumb {
   background-size: 70%;
   background-repeat: no-repeat;
   border-radius: 50%;
+  
   position: fixed;
-  bottom: 4%;
-  right: 1.8%;
+  right: 2%;
   z-index: 100;
+}
+
+.buttonScrollSiteTop {
+  bottom: 10%;
+}
+
+.buttonScrollSiteBottom {
+  transform: rotate(180deg);
+  bottom: 6%;
 }
 
 .contentSite{

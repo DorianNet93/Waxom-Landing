@@ -29,9 +29,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
+  opacity: 0;
   width: 70px;
   height: 70px;
+  transition: all 0.2s ease;
 }
 
 .section5-playIcon {
@@ -58,6 +59,12 @@
   font-weight: 700;
   font-size: 12px;
   color: rgb(193, 173, 179);
+  opacity: 0;
+}
+
+.section5:hover .section5-playBlock,
+.section5:hover .section5-time{
+  opacity: 1;
 }
 
 
