@@ -258,10 +258,8 @@
 
   .sampleSite1:hover {
     z-index: 3;
-    height: 50vh;
     max-width: 90vw;
-    bottom: 20%;
-    
+    bottom: 50%;
     border: 2px solid rgb(78,52,39);
   }
 

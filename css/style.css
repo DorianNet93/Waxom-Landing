@@ -3,14 +3,15 @@
   box-sizing: border-box;
 }
 
-p,h1,h2,time {
-  cursor: default;
-}
 
 html, body, .contentSite {
   width: 100%;
   height: 100%;
   scroll-behavior: smooth; 
+}
+
+body {
+  cursor: url("../cursors/cursor-default.png"), default;
 }
 
 body::-webkit-scrollbar {
@@ -59,14 +60,13 @@ body::-webkit-scrollbar-thumb {
 }
 
 .contentSite{
-  animation: block 14s linear;
+  animation: block 4s linear;
 }
 
 /* @keyframes block {
   0% {
     overflow: hidden;
   }
-
   70% {
     background-color: black;
   }
@@ -85,20 +85,25 @@ body::-webkit-scrollbar-thumb {
   height: 100%;
   position: fixed;
   opacity: 0;
-  animation: promo 10s linear forwards;
+  background-color: black;
+  animation: promo 4s linear forwards;
   z-index: 500;
 }
 
 .promoVideo {
   width: 100%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
 }
 
-@keyframes promo {
+/* @keyframes promo {
   0% {
     opacity: 1;
   }
 
-  99% {
+  70% {
     opacity: 1;
     z-index: 500;
   }
@@ -106,8 +111,9 @@ body::-webkit-scrollbar-thumb {
   100% {
     opacity: 0;
     z-index: -500;
+    display: none;
   }
-}
+} */
 
 .wrapper {
   width: 100%;
@@ -733,8 +739,8 @@ body::-webkit-scrollbar-thumb {
   .section1Button {
     width: 40%;
     font-size: 12px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 
   .buttonArrow {
