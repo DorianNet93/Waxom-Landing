@@ -3,6 +3,15 @@
   box-sizing: border-box;
 }
 
+:root {
+  --transition: all 0.2s ease;
+  --colorStyle191: rgb(191, 171, 147);
+  --colorStyleDark199: rgb(199, 178, 153);
+  --colorLightGray149: rgb(149, 149, 149);
+  --colorGray85: rgb(85, 85, 85);
+  --colorBlack17: rgb(17, 17, 17);
+}
+
 
 html, body, .contentSite {
   width: 100%;
@@ -16,7 +25,7 @@ body {
 
 body::-webkit-scrollbar {
   width: 15px;
-  background-color: rgb(191, 171, 147);
+  background-color: var(--colorStyle191);
 }
 
 body::-webkit-scrollbar-thumb {
@@ -44,10 +53,14 @@ body::-webkit-scrollbar-thumb {
   background-size: 70%;
   background-repeat: no-repeat;
   border-radius: 50%;
-  
   position: fixed;
   right: 2%;
   z-index: 100;
+  transition: var(--transition);
+}
+
+.buttonScrollSite:hover {
+  border-color: var(--colorStyleDark199);
 }
 
 .buttonScrollSiteTop {
@@ -231,11 +244,11 @@ body::-webkit-scrollbar-thumb {
   font-weight: 300;
   text-decoration: none;
   color: white;
-  transition: all 0.2s ease;
+  transition: var(--transition);
 }
 
 .link:hover {
-  color: rgb(191, 171, 147);
+  color: var(--colorStyle191);
 }
 
 .bar {
@@ -249,11 +262,11 @@ body::-webkit-scrollbar-thumb {
 }
 
 .bagIcon {
-  transition: all 0.2s ease;
+  transition: var(--transition);
 }
 
 .bagIcon:hover {
-  fill: rgb(191, 171, 147) ;
+  fill: var(--colorStyle191) ;
 }
 
 .buttonSearch {
@@ -265,11 +278,12 @@ body::-webkit-scrollbar-thumb {
 }
 
 .searchIcon {
-  transition: all 0.2s ease;
+  transition: var(--transition);
+  cursor: pointer;
 }
 
 .buttonSearch:hover svg {
-  fill: rgb(191, 171, 147);
+  fill: var(--colorStyle191);
 }
 
 .section1Content {
@@ -282,20 +296,17 @@ body::-webkit-scrollbar-thumb {
 .section1Content-textTop {
   font-size: 24px;
   font-weight: 500;
-  cursor: default;
 }
 
 .section1Content-textMiddle {
   font-size: 46px;
-  font-weight: 800;
-  cursor: default;
+  font-weight: 800; 
 }
 
 .section1Content-textBottom {
   font-family: 'Montserrat', sans-serif;
   font-weight: 300;
   font-size: 14px;
-  cursor: default;
   margin-bottom: 5%;
 }
 
@@ -309,7 +320,7 @@ body::-webkit-scrollbar-thumb {
   font-weight: 800;
   padding-top: 10px;
   padding-bottom: 10px;
-  background-color: rgb(191, 171, 147);
+  background-color: var(--colorStyle191);
   cursor: pointer;
 }
 
@@ -332,7 +343,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .arrowIcon {
-  transition: all 0.2s ease;
+  transition: var(--transition);
 }
 
 
@@ -357,7 +368,7 @@ body::-webkit-scrollbar-thumb {
   height: 10px;
   border-radius: 50%;
   cursor: pointer;
-  background-color: gray;
+  background-color: var(--colorGray85);
   cursor: pointer;
 }
 
@@ -419,7 +430,7 @@ body::-webkit-scrollbar-thumb {
   height: 12px;
   background: transparent;
   border-radius: 50%;
-  border: 2px solid rgb(191, 171, 147);
+  border: 2px solid var(--colorStyle191);
   opacity: 0;
   cursor: pointer;
 }
@@ -677,7 +688,6 @@ body::-webkit-scrollbar-thumb {
     background-repeat: no-repeat;
     background-position: center;
     order: 1;
-    
   }
 
   .navMobileLink {

@@ -50,7 +50,7 @@
   font-family: 'Raleway', sans-serif;
   font-size: 24px;
   font-weight: 700;
-  color: rgb(85, 85, 85);
+  color: var(--colorGray85);
 }
 
 .sec6-text {
@@ -206,5 +206,4 @@
   .sec6-bottom-text {
     font-size: 12px;
   }
-
 }

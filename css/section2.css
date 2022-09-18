@@ -3,7 +3,6 @@
   height: 50%;
   display: flex;
   justify-content: space-between;
-  
 }
 
 .wrapper2 {
@@ -20,30 +19,29 @@
   text-align: center;
   height: 100%;
   justify-content: space-between;
-  
 }
 
 .bottomLineBlockSec2, .IconSec2, .titleAboutSec2 {
-  transition: all 0.2s ease;
+  transition: var(--transition);
 }
 
 .desingBlock:hover svg {
-  fill: rgb(199, 178, 153);
+  fill: var(--colorStyleDark199);
 }
 
 .desingBlock:hover .bottomLineBlockSec2 {
-  background-color: rgb(199, 178, 153);
+  background-color: var(--colorStyleDark199);
 }
 
 .desingBlock:hover .titleAboutSec2 {
-  color: rgb(199, 178, 153);
+  color: var(--colorStyleDark199);
 }
 
 .titleAboutSec2 {
   font-family: 'Raleway', sans-serif;
   font-size: 18px;
   font-weight: 700;
-  color:  rgb(85, 85, 85);
+  color: var(--colorGray85);
 }
 
 .textAboutSec2 {
@@ -56,7 +54,7 @@
 .bottomLineBlockSec2 {
   height: 2px;
   width: 30%;
-  background-color: rgb(85, 85, 85);
+  background-color: var(--colorGray85);
 }
 
 @media (min-width: 650px) and (max-width: 1000px) {
