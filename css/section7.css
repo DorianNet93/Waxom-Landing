@@ -58,6 +58,8 @@
   height: 75%;
   width: 100%;
   z-index: -1;
+  object-fit: cover;
+  object-position: right;
 }
 
 .sec7-filterImg {
@@ -215,6 +217,11 @@
     font-size: 12px;
   }
 
+  .sec7-boxImg {
+    object-fit: cover;
+    object-position: center;
+  }
+
   .section7-contentBoxBottomText-Top{
     font-size: 12px;
   }
@@ -253,6 +260,10 @@
 
   .section7-text {
     font-size: 12px;
+  }
+
+  .sec7-boxImg {
+    object-fit: cover;
   }
 
   .section7-contentBoxBottomText-Top{

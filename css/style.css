@@ -76,7 +76,7 @@ body::-webkit-scrollbar-thumb {
   animation: block 4s linear;
 }
 
-/* @keyframes block {
+@keyframes block {
   0% {
     overflow: hidden;
   }
@@ -91,7 +91,7 @@ body::-webkit-scrollbar-thumb {
   100% {
     overflow: visible;
   }
-} */
+}
 
 .promo {
   width: 100%;
@@ -111,7 +111,7 @@ body::-webkit-scrollbar-thumb {
   transform: translate(-50%,-50%);
 }
 
-/* @keyframes promo {
+@keyframes promo {
   0% {
     opacity: 1;
   }
@@ -126,7 +126,7 @@ body::-webkit-scrollbar-thumb {
     z-index: -500;
     display: none;
   }
-} */
+}
 
 .wrapper {
   width: 100%;
@@ -149,6 +149,8 @@ body::-webkit-scrollbar-thumb {
   width: 100%;
   height: 100%;
   position: absolute;
+  object-fit: cover;
+  object-position: center;
 }
 
 .background1 {
@@ -322,6 +324,11 @@ body::-webkit-scrollbar-thumb {
   padding-bottom: 10px;
   background-color: var(--colorStyle191);
   cursor: pointer;
+  transition: var(--transition);
+}
+
+.section1Button:hover {
+  transform: scale(1.2);
 }
 
 .buttonArrow {
@@ -340,12 +347,12 @@ body::-webkit-scrollbar-thumb {
   background-position: center;
   background-size: 100%;
   background-repeat: no-repeat;
+  transition: var(--transition);
 }
 
 .arrowIcon {
   transition: var(--transition);
 }
-
 
 .buttonArrowLeft {
   left: 7%;
@@ -634,7 +641,7 @@ body::-webkit-scrollbar-thumb {
   }
 
   .section1Content-textBottom {
-    font-size: 10px;
+    font-size: 8px;
     margin-bottom: 10%;
   }
 
@@ -734,15 +741,17 @@ body::-webkit-scrollbar-thumb {
   }
 
   .section1Content-textTop {
-    font-size: 8px;
+    font-size: 12px;
+    margin-bottom: 2px;
   }
 
   .section1Content-textMiddle {
-    font-size: 16px;
+    font-size: 20px;
+
   }
 
   .section1Content-textBottom {
-    font-size: 8px;
+    font-size: 10px;
     margin-bottom: 15%;
   }
 
