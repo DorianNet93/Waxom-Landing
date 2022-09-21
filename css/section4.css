@@ -283,13 +283,34 @@
   }
 
   .section4 {
-    height: 200%;
+    height:auto;
   }
 
   .wrapper4 {
     padding-left: 5%;
     padding-right: 5%;
-    gap: 2%;
+    gap: 0;
+    height: auto;
+  }
+
+  .section4-titleContent {
+    margin-bottom: 10px;
+  }
+
+  .section4-buttonsSlide {
+    margin-bottom: 10px;
+  }
+
+  .section4-content {
+    margin-bottom: 20px;
+  }
+
+  .section4-contentBox {
+    margin-bottom: 5px;
+  }
+
+  .section4-contentBox:last-child {
+    margin-bottom: 0px;
   }
 
   .section4-title {
